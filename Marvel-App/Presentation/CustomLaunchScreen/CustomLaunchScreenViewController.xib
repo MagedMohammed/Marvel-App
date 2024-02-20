@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomLaunchScreenViewController" customModule="MarvelApp" customModuleProvider="target">
+            <connections>
+                <outlet property="logoImage" destination="WtM-U5-ddw" id="Jco-JT-OQx"/>
+                <outlet property="progressBar" destination="YQM-We-etj" id="SC1-pn-l4X"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-f3-Uxj">
+                    <rect key="frame" x="71.666666666666686" y="345" width="250" height="162"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marvel-logo-2D20B064BD-seeklogo.com 1" translatesAutoresizingMaskIntoConstraints="NO" id="WtM-U5-ddw">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="130"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="250" id="r5P-2x-6lb"/>
+                            </constraints>
+                        </imageView>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-We-etj">
+                            <rect key="frame" x="50" y="158" width="150" height="4"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="AOX-v8-KZm"/>
+                            </constraints>
+                            <color key="progressTintColor" name="ProgressBarColor"/>
+                            <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </progressView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="LaunchScreenBG"/>
+            <constraints>
+                <constraint firstItem="vjL-f3-Uxj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JwZ-Qa-ag5"/>
+                <constraint firstItem="vjL-f3-Uxj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZaX-yF-rtf"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="marvel-logo-2D20B064BD-seeklogo.com 1" width="300" height="130"/>
+        <namedColor name="LaunchScreenBG">
+            <color red="0.14509803921568629" green="0.67843137254901964" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ProgressBarColor">
+            <color red="0.42352941176470588" green="0.81568627450980391" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

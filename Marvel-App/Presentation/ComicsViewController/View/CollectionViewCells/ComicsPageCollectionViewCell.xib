@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ComicsPageCollectionViewCell" id="gTV-IL-0wX" customClass="ComicsPageCollectionViewCell" customModule="MarvelApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="256"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="165" height="256"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RXW-Bs-Rus">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="256"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="comicBackground"/>
+            <constraints>
+                <constraint firstItem="RXW-Bs-Rus" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9bn-uw-bzC"/>
+                <constraint firstAttribute="bottom" secondItem="RXW-Bs-Rus" secondAttribute="bottom" id="Drd-cm-25M"/>
+                <constraint firstItem="RXW-Bs-Rus" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eg7-Um-smw"/>
+                <constraint firstAttribute="trailing" secondItem="RXW-Bs-Rus" secondAttribute="trailing" id="ztq-h1-Ddl"/>
+            </constraints>
+            <size key="customSize" width="165" height="256"/>
+            <connections>
+                <outlet property="comicImage" destination="RXW-Bs-Rus" id="gYg-jz-vz6"/>
+            </connections>
+            <point key="canvasLocation" x="95.419847328244273" y="41.549295774647888"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="comicBackground">
+            <color red="0.15686274509803921" green="0.16862745098039217" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
